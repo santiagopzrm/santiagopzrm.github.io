@@ -4,8 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Santiago Paz</title>
-  <meta name="description" content="Santiago Paz>
-  <p class="subtitle">PhD Student in Economics, Harvard University</p>
+  <meta name="description" content="Santiago Paz — PhD student in Economics at Harvard University. Research in Development Economics, Economic History, Cultural Economics, and Political Economy." />
+
+  <!-- Lato font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
@@ -16,48 +17,46 @@
 <body>
   <div class="container">
 
+    <div class="topbar">
+      <div class="nav">
+        <a class="active" href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="contact.html">CV & Contact</a>
+      </div>
+    </div>
+
     <h1>Santiago Paz</h1>
     <p class="subtitle">PhD Student in Economics, Harvard University</p>
 
-    <nav class="nav">
-      <a href="#fields">Fields</a>
-      <a href="#research">Research</a>
-      <a href="#wip">Works in Progress</a>
-      <a href="#papers">Papers</a>
-      <a href="#talks">Seminars & Presentations</a>
-      <a href="#cv">CV</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
     <div class="hero">
-  <!-- HEADSHOT -->
-  <img src="assets/headshot.jpg" alt="Santiago Paz" class="headshot" />
+      <!-- HEADSHOT -->
+      <img src="assets/headshot.jpg" alt="Santiago Paz" class="headshot" />
 
-  <!-- MAIN INTRO TEXT -->
-  <div class="intro">
-    <p><b>Welcome!</b></p>
-    <p>
-      I am a PhD student in Economics at Harvard University. I am interested in
-      <b>Development Economics</b>, <b>Economic History</b>, <b>Cultural Economics</b>, and <b>Political Economy</b>.
-    </p>
-    <p>
-      My work studies how historical institutions and cultural factors shape long-run development,
-      combining archival data construction with applied microeconometric methods.
-    </p>
-  </div>
+      <!-- MAIN INTRO TEXT -->
+      <div class="intro">
+        <p><b>Welcome!</b></p>
+        <p>
+          I am a PhD student in Economics at Harvard University. I am interested in
+          <b>Development Economics</b>, <b>Economic History</b>, <b>Cultural Economics</b>, and <b>Political Economy</b>.
+        </p>
+        <p>
+          My work studies how historical institutions and cultural factors shape long-run development,
+          combining archival data construction with applied microeconometric methods.
+        </p>
+      </div>
 
-  <!-- RIGHT SIDEBAR (space-filler, but still minimalist) -->
-  <div class="card">
-    <h3>Links</h3>
-    <p><a href="assets/cv/cv.pdf">CV (PDF)</a></p>
-    <p><a href="mailto:spazramos@fas.harvard.edu">spazramos@fas.harvard.edu</a></p>
-    <p><a href="https://github.com/santiagopzrm">GitHub</a></p>
-    <p><a href="#">Google Scholar</a></p>
+      <!-- RIGHT SIDEBAR -->
+      <div class="card">
+        <h3>Links</h3>
+        <p><a href="assets/cv/cv.pdf">CV (PDF)</a></p>
+        <p><a href="mailto:spazramos@fas.harvard.edu">spazramos@fas.harvard.edu</a></p>
+        <p><a href="https://github.com/santiagopzrm">GitHub</a></p>
+        <p><a href="#">Google Scholar</a></p>
 
-    <h3 style="margin-top:14px;">Recent</h3>
-    <p>2026 — (Add one line: seminar, working paper posted, etc.)</p>
-  </div>
-</div>
+        <h3 style="margin-top:14px;">Recent</h3>
+        <p>2026 — (Add one line: seminar, working paper posted, etc.)</p>
+      </div>
+    </div>
 
     <section class="section" id="fields">
       <h2>Fields</h2>
@@ -122,7 +121,7 @@
     </section>
 
     <footer>
-      <span>Last updated: d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+      <span>Last updated: </span><span id="last-updated"></span>
     </footer>
 
   </div>
