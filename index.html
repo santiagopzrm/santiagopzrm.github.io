@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Santiago Paz</title>
+  <meta name="description" content="Santiago Paz — PhD Student in Economics at Harvard University." />
 
-  <!-- Lato font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
@@ -16,48 +16,107 @@
 <body>
   <div class="container">
 
-    <div class="topbar">
-      <div class="nav">
-        <a class="active" href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="contact.html">CV & Contact</a>
-      </div>
-    </div>
-
     <h1>Santiago Paz</h1>
+    <p class="subtitle">PhD Student in Economics, Harvard University</p>
+
+    <nav class="nav">
+      <a href="#fields">Fields</a>
+      <a href="#research">Research</a>
+      <a href="#wip">Works in Progress</a>
+      <a href="#papers">Papers</a>
+      <a href="#talks">Seminars & Presentations</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
     <div class="hero">
-      <!-- Put your photo at assets/headshot.jpg -->
+      <!-- Put your headshot at: assets/headshot.jpg -->
       <img src="assets/headshot.jpg" alt="Santiago Paz" class="headshot" />
 
-      <div>
-        <p><b>Welcome!</b></p>
-
+      <div class="intro">
+        <p><b>Welcome.</b></p>
         <p>
-          I am a PhD student in Economics at Harvard University.
-          I am interested in <b>Development Economics</b>, <b>Economic History</b>,
-          <b>Cultural Economics</b>, and <b>Political Economy</b>.
+          I am a PhD student in Economics at Harvard University. I am interested in
+          Development Economics, Economic History, Cultural Economics, and Political Economy.
         </p>
-
-        <p>
-          (Add 1–2 sentences here about your current work / data / methods.)
-        </p>
-
-        <p>
-          Here is my <a href="assets/cv/cv.pdf">CV</a>.
+        <p class="small">
+          (Optional: add 1 sentence on methods/data: “I work with archival data, spatial variation, and applied microeconometrics.”)
         </p>
       </div>
     </div>
 
+    <section class="section" id="fields">
+      <h2>Fields</h2>
+      <p class="small">Development Economics · Economic History · Cultural Economics · Political Economy</p>
+    </section>
+
+    <section class="section" id="research">
+      <h2>Research</h2>
+      <p class="small">
+        I study how historical institutions and cultural factors shape long-run development outcomes.
+        My work combines archival data construction with applied microeconometric methods.
+      </p>
+    </section>
+
+    <section class="section" id="wip">
+      <h2>Works in Progress</h2>
+
+      <p class="pub">
+        <span class="pub-title">Title of Project #1</span><br/>
+        <span class="small">One sentence: question + data + setting.</span>
+      </p>
+
+      <p class="pub">
+        <span class="pub-title">Title of Project #2</span><br/>
+        <span class="small">One sentence.</span>
+      </p>
+    </section>
+
+    <section class="section" id="papers">
+      <h2>Papers</h2>
+
+      <p class="pub">
+        <span class="pub-title">Paper Title</span>
+        <span class="badge">Working Paper</span><br/>
+        <a href="#">PDF</a> · <a href="#">Abstract</a> · <a href="#">Code/Data</a>
+      </p>
+
+      <p class="small">(Replace placeholders with real links when you upload PDFs.)</p>
+    </section>
+
+    <section class="section" id="talks">
+      <h2>Seminars & Presentations</h2>
+      <ul>
+        <li><b>2026</b> — Seminar / Workshop Name, Institution</li>
+        <li><b>2025</b> — Seminar / Conference Name, Institution</li>
+      </ul>
+    </section>
+
+    <section class="section" id="cv">
+      <h2>CV</h2>
+      <p><a href="assets/cv/cv.pdf">Download CV (PDF)</a></p>
+      <p class="small">Upload your CV to <code>assets/cv/cv.pdf</code>.</p>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <p class="small">
+        Email: <a href="mailto:spazramos@fas.harvard.edu">spazramos@fas.harvard.edu</a><br/>
+        GitHub: <a href="https://github.com/santiagopzrm">github.com/santiagopzrm</a><br/>
+        Google Scholar: <a href="#">Scholar Profile</a>
+      </p>
+    </section>
+
     <footer>
-      <div>Last updated: <span id="last-updated"></span></div>
+      <span>Last updated: </span><span id="last-updated"></span>
     </footer>
+
   </div>
 
   <script>
     const d = new Date();
     document.getElementById("last-updated").textContent =
-      d.toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" });
+      d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
   </script>
 </body>
 </html>
