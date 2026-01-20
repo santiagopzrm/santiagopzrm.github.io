@@ -172,3 +172,11 @@ footer{
   .hero{ grid-template-columns: 1fr; }
 }
 
+.links-inline{
+  font-size: 15px;
+  margin-top: 6px;
+}
+.links-inline a{ text-decoration: none; }
+.links-inline a:hover{ text-decoration: underline; }
+
+
