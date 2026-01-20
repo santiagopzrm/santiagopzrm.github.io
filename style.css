@@ -179,4 +179,63 @@ footer{
 .links-inline a{ text-decoration: none; }
 .links-inline a:hover{ text-decoration: underline; }
 
+/* --- Minimal polish for Home layout --- */
+.container{
+  max-width: 980px;   /* makes it feel less tiny */
+}
+
+/* Nav: a little more breathing room */
+.nav a{
+  margin-right: 22px;
+  text-decoration: none;
+}
+
+/* Hero: photo + text, use space better */
+.hero{
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 34px;
+  align-items: start;
+  margin-top: 18px;
+}
+
+/* Headshot slightly bigger */
+.headshot{
+  width: 240px;
+  border-radius: 14px;
+}
+
+/* Intro line length + spacing */
+.intro{
+  max-width: 620px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Links line under intro: clean + compact */
+.links-inline{
+  margin-top: 14px;
+  font-size: 15px;
+}
+.links-inline a{
+  text-decoration: none;
+}
+.links-inline a:hover{
+  text-decoration: underline;
+}
+
+/* Footer: subtle */
+footer{
+  margin-top: 32px;
+  padding-top: 12px;
+  border-top: 1px solid #eaeaea;
+  color: #666;
+  font-size: 13px;
+}
+
+/* Mobile */
+@media (max-width: 720px){
+  .hero{ grid-template-columns: 1fr; }
+  .headshot{ width: 180px; }
+}
 
