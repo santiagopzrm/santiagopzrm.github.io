@@ -1,10 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Welcome</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Santiago Paz</title>
+  <meta name="description" content="Santiago Paz — Economics PhD student. Research, papers, and contact." />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <h1>My Website</h1>
-    <p>Under construction. Check back soon!</p>
+  <div class="container">
+
+    <header class="site-header">
+      <div class="header-grid">
+        <div>
+          <h1>Santiago Paz</h1>
+          <p class="subtitle">PhD Student in Economics, Harvard University</p>
+
+          <nav class="top-nav">
+            <a href="#fields">Fields</a>
+            <a href="#research">Research</a>
+            <a href="#wip">Works in Progress</a>
+            <a href="#papers">Papers</a>
+            <a href="#talks">Seminars & Presentations</a>
+            <a href="#cv">CV</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+
+        <div class="headshot-wrap">
+          <!-- HEADSHOT FILENAME GOES HERE -->
+          <!-- Put your photo at: assets/headshot.jpg -->
+          <img src="assets/headshot.jpg" alt="Santiago Paz" class="headshot" />
+        </div>
+      </div>
+    </header>
+
+    <section id="fields">
+      <h2>Fields</h2>
+      <p>Development Economics, Economic History, Cultural Economics, Political Economy</p>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+      <p>
+        I study how historical institutions and cultural factors shape long-run development outcomes.
+        My work combines archival data construction with applied microeconometric methods.
+      </p>
+    </section>
+
+    <section id="wip">
+      <h2>Works in Progress</h2>
+
+      <p class="pub">
+        <span class="pub-title">Title of Project #1</span><br/>
+        <span class="small">1 sentence description (question + data).</span>
+      </p>
+
+      <p class="pub">
+        <span class="pub-title">Title of Project #2</span><br/>
+        <span class="small">1 sentence description.</span>
+      </p>
+    </section>
+
+    <section id="papers">
+      <h2>Papers</h2>
+
+      <p class="pub">
+        <span class="pub-title">Paper Title</span>
+        <span class="badge">Working Paper</span><br/>
+        <a href="#">PDF</a> · <a href="#">Abstract</a> · <a href="#">Code/Data</a>
+      </p>
+    </section>
+
+    <section id="talks">
+      <h2>Seminars & Presentations</h2>
+      <ul>
+        <li><b>2026</b> — Seminar / Workshop Name, Institution</li>
+        <li><b>2025</b> — Seminar / Conference Name, Institution</li>
+      </ul>
+    </section>
+
+    <section id="cv">
+      <h2>CV</h2>
+      <p>
+        <a href="assets/cv/cv.pdf">Download CV (PDF)</a>
+      </p>
+      <p class="small">
+        Upload your CV to <code>assets/cv/cv.pdf</code> (optional).
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:your.email@domain.com">your.email@domain.com</a><br/>
+        GitHub: <a href="https://github.com/santiagopzrm">github.com/santiagopzrm</a><br/>
+        Google Scholar: <a href="#">Scholar Profile</a>
+      </p>
+    </section>
+
+    <footer>
+      <p class="small">Last updated: <span id="last-updated"></span></p>
+    </footer>
+
+  </div>
+
+  <script>
+    const d = new Date();
+    document.getElementById("last-updated").textContent =
+      d.toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" });
+  </script>
 </body>
 </html>
